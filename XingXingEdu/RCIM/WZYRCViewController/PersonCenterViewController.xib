@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonCenterViewController">
+            <connections>
+                <outlet property="table" destination="oIp-nE-gnu" id="HT5-gn-d4W"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oIp-nE-gnu">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="307"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="307" id="9S1-qL-ilV"/>
+                        <constraint firstAttribute="width" secondItem="oIp-nE-gnu" secondAttribute="height" multiplier="375:307" id="Dso-zX-gRa"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0Q2-Pg-Qzd"/>
+                        <outlet property="delegate" destination="-1" id="H18-MO-lSA"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dto-c6-Lml">
+                    <rect key="frame" x="25" y="467" width="325" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Dto-c6-Lml" secondAttribute="height" multiplier="325:42" id="be8-X0-hFB"/>
+                        <constraint firstAttribute="width" constant="325" id="wqC-i1-SaL"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="rcim6.png"/>
+                    <connections>
+                        <action selector="blacklistBtn:" destination="-1" eventType="touchUpInside" id="Y1F-7S-zk1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8Z-Mq-XqC">
+                    <rect key="frame" x="25" y="517" width="325" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="y8Z-Mq-XqC" secondAttribute="height" multiplier="325:42" id="oAF-54-Qdb"/>
+                        <constraint firstAttribute="width" constant="325" id="oRR-k1-Q6F"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="rcim7.png"/>
+                    <connections>
+                        <action selector="reportBtn:" destination="-1" eventType="touchUpInside" id="kO9-Da-zGy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdK-95-Y5h">
+                    <rect key="frame" x="25" y="417" width="325" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="DdK-95-Y5h" secondAttribute="height" multiplier="325:42" id="3z6-uj-oEP"/>
+                        <constraint firstAttribute="width" constant="325" id="s8W-qG-kdI"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="rcim5.png"/>
+                    <connections>
+                        <action selector="seeFriendSterBtn:" destination="-1" eventType="touchUpInside" id="341-Cn-j4V"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6u-rp-MtI">
+                    <rect key="frame" x="25" y="567" width="325" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="n6u-rp-MtI" secondAttribute="height" multiplier="325:42" id="BgV-3V-0a1"/>
+                        <constraint firstAttribute="width" constant="325" id="PPG-8x-iqK"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="rcim8.png"/>
+                    <connections>
+                        <action selector="deleteBtn:" destination="-1" eventType="touchUpInside" id="HBP-ac-aZ6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8M-sU-E4p">
+                    <rect key="frame" x="25" y="367" width="325" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="325" id="Tf0-dR-EmW"/>
+                        <constraint firstAttribute="width" secondItem="L8M-sU-E4p" secondAttribute="height" multiplier="325:42" id="gDC-UJ-Tyn"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="rcim4.png"/>
+                    <connections>
+                        <action selector="chatToOneBtn:" destination="-1" eventType="touchUpInside" id="n6N-Jm-ZOT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DdK-95-Y5h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="0Ni-Vr-lbl"/>
+                <constraint firstItem="y8Z-Mq-XqC" firstAttribute="top" secondItem="Dto-c6-Lml" secondAttribute="bottom" constant="8" id="0eK-k0-SN5"/>
+                <constraint firstAttribute="trailing" secondItem="y8Z-Mq-XqC" secondAttribute="trailing" constant="25" id="1oE-io-elb"/>
+                <constraint firstItem="n6u-rp-MtI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="2tD-Me-N2r"/>
+                <constraint firstAttribute="trailing" secondItem="n6u-rp-MtI" secondAttribute="trailing" constant="25" id="5O9-U4-zW8"/>
+                <constraint firstItem="DdK-95-Y5h" firstAttribute="top" secondItem="L8M-sU-E4p" secondAttribute="bottom" constant="8" id="AON-yu-2co"/>
+                <constraint firstAttribute="trailing" secondItem="L8M-sU-E4p" secondAttribute="trailing" constant="25" id="Dac-gy-Mfi"/>
+                <constraint firstItem="Dto-c6-Lml" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="HQu-d1-4vh"/>
+                <constraint firstItem="y8Z-Mq-XqC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="Ir4-w9-dEg"/>
+                <constraint firstItem="oIp-nE-gnu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LbB-Rm-dqe"/>
+                <constraint firstAttribute="trailing" secondItem="oIp-nE-gnu" secondAttribute="trailing" id="MeZ-IZ-5mD"/>
+                <constraint firstItem="L8M-sU-E4p" firstAttribute="top" secondItem="oIp-nE-gnu" secondAttribute="bottom" constant="60" id="OAG-Ob-29M"/>
+                <constraint firstItem="n6u-rp-MtI" firstAttribute="top" secondItem="y8Z-Mq-XqC" secondAttribute="bottom" constant="8" id="TnI-8a-lgX"/>
+                <constraint firstAttribute="trailing" secondItem="Dto-c6-Lml" secondAttribute="trailing" constant="25" id="Wja-oe-iix"/>
+                <constraint firstItem="oIp-nE-gnu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cNs-Z4-G1W"/>
+                <constraint firstItem="L8M-sU-E4p" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="jVD-9a-JCb"/>
+                <constraint firstAttribute="trailing" secondItem="DdK-95-Y5h" secondAttribute="trailing" constant="25" id="raX-5m-FW3"/>
+                <constraint firstItem="Dto-c6-Lml" firstAttribute="top" secondItem="DdK-95-Y5h" secondAttribute="bottom" constant="8" id="tom-kn-ayW"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="230.5" y="258.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rcim4.png" width="650" height="84"/>
+        <image name="rcim5.png" width="650" height="84"/>
+        <image name="rcim6.png" width="650" height="84"/>
+        <image name="rcim7.png" width="650" height="84"/>
+        <image name="rcim8.png" width="650" height="84"/>
+    </resources>
+</document>
