@@ -67,6 +67,7 @@
 
 @implementation AppDelegate
 
+//试一下 看能不能上传成功 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
